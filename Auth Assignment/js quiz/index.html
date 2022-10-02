@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading"><span class="q">Q</span><span class="txtUI">UI</span><span class="z">Z</span></h1>
+    <div class="question-container">
+        <span class="forDisplay">
+            <div>
+                <li><b id="question">Q1: Here is your first Question</b></li>
+            <div class="options">
+                <li><label><input type="radio" name="html-opt" id="inp1" value="opt1"><b id="opt1">Here will be your first</b></label></li>
+                <li><label><input type="radio" name="html-opt" id="inp2" value="opt2"><b id="opt2">Here will be your second</b></label></li>
+                <li><label><input type="radio" name="html-opt" id="inp3" value="opt3"><b id="opt3">Here will be your third</b></label></li>
+                <li><label><input type="radio" name="html-opt" id="inp4" value="opt4"><b id="opt4">Here will be your fourth</b></label></li>
+            </div>
+            </div>
+            <button class="custom-btn btn-11 submit-btn" onclick="next()">Submit</button>
+        </span>
+        <div class="result">
+            <img src="../Assets/Images/javascript-icon.png" alt="" class="logo">
+            <h3 class="greet"></h3>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../script.js" type="module"></script>
+<script src="../firebaseconfig.js" type="module"></script>
+</html>

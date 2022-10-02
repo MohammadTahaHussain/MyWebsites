@@ -1,0 +1,371 @@
+@font-face {
+    font-family: forHeading;
+    src: url(Assets/Fonts/Result_Rubik_Maze/RubikMaze-Regular.ttf);
+}
+@font-face {
+    font-family: forInput;
+    src: url(Assets/Fonts/ForInput_Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+}
+body{
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1.heading{
+    text-align: center;
+    font-family: forHeading;
+}
+span.q , span.z{
+    color: #c06fbb;
+}
+span.txtUI{
+    color: #fff;
+    font-style: italic;
+}
+.login-details{
+    color: gray;
+    height: inherit;
+    /* height: 80vh; */
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    border: 2px solid #ffffff;
+    padding: 30px;
+    /* background: linear-gradient( #6c96f7,#947dca, #c06fbb); */
+    background-image: url(Assets/Images/wavePurple.svg);    
+    background-color: rgba(255, 255, 255, 0.851);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    border-top-left-radius: 5px;
+    backdrop-filter: blur(20px);
+    margin: 0 auto;
+    border-radius: 15px ;
+}
+.login-details h1{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 75%;
+    font-family: forInput;
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+}
+.login-details > div{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+div.login-btn{
+    margin: 0 auto;
+}
+div.login-btn button{
+    color: #fff;
+    background:linear-gradient(#6c96f7,#947dca, #c06fbb);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.custom-btn {
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    /* display: inline-block; */
+    display: block;
+    margin: 0 auto;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  button#login-btn{
+    margin-top: -10px !important;
+  }
+  .btn-11 {
+    border: none;
+    background: rgb(251,33,117);
+      background: linear-gradient(0deg, #6c96f7,#947dca, #c06fbb);
+      /* background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%); */
+      color: #fff;
+      overflow: hidden;
+      display: block !important;
+      margin: 0 auto !important;
+      
+  }
+  .btn-11:hover {
+      text-decoration: none;
+      color: #fff;
+  }
+  .btn-11:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+      animation: shiny-btn1 3s ease-in-out infinite;
+  }
+  .btn-11:hover{
+    opacity: .7;
+  }
+  .btn-11:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  @-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+  
+@media screen and (max-width:600px) {
+        .login-details{
+            margin-top: 10vh !important;
+            width: 70% !important;
+        }
+}
+p.goToLogin{
+    color: #000000;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 0.3px #000000;
+  }
+  .goToRecovery{
+  margin-top: -12px !important;
+
+}
+
+
+
+
+
+/* Wobble Top */
+@-webkit-keyframes hvr-wobble-top {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  @keyframes hvr-wobble-top {
+    16.65% {
+      -webkit-transform: skew(-12deg);
+      transform: skew(-12deg);
+    }
+    33.3% {
+      -webkit-transform: skew(10deg);
+      transform: skew(10deg);
+    }
+    49.95% {
+      -webkit-transform: skew(-6deg);
+      transform: skew(-6deg);
+    }
+    66.6% {
+      -webkit-transform: skew(4deg);
+      transform: skew(4deg);
+    }
+    83.25% {
+      -webkit-transform: skew(-2deg);
+      transform: skew(-2deg);
+    }
+    100% {
+      -webkit-transform: skew(0);
+      transform: skew(0);
+    }
+  }
+  .hvr-wobble-top {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+  }
+  .hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active {
+    -webkit-animation-name: hvr-wobble-top;
+    animation-name: hvr-wobble-top;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    cursor: pointer;
+  }
+  
+              /* Category Page Css */
+
+.category-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* top: 20vh; */
+}
+.category-container div{
+  height: 60vh;
+  width: 25%;
+  border: 2px solid #000000;
+  background-color: #fff;
+  text-align: center;
+}
+.html{
+  background-image: url(Assets/Images/html\ icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.css{
+  background-image: url(Assets/Images/css\ logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.js{
+  background-image: url(Assets/Images/javascript-icon.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+img.quiz-logo{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 30px;
+  top: 10vh;
+  /* margin-bottom: 30px; */
+}
+h2{
+  margin: 0;
+}
+/* .category-hover{
+  opacity: 0;
+}
+.category-hover:hover{
+  opacity: 1;
+}
+.category-container div:hover{
+  background-image: none;
+} */
+
+img.logo{
+  width: 100px;
+  padding: 0px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.category-hover{
+  opacity: 0;
+}
+.category-hover h3{
+  position: relative;
+  font-size: 20px;
+  top: 20px;
+}
+.category-hover p{
+  position: relative;
+  bottom: 10px;
+}
+.forgot-password{
+  color: #000000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.forgot-password a{
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width:600px) {
+  .category-container{
+    flex-direction: column;
+  }
+ .category-container div{
+   margin-bottom: 4vh;
+   width: 80% !important;
+   height: 60vh !important;
+  }
+  img.logo{
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (min-width:500px) and (min-height:335px) {
+  /* .category-hover{
+    opacity: 0;
+  } */
+  .category-hover:hover{
+    opacity: 1;
+  }
+  .category-container div:hover{
+    background-image: none;
+  }
+}
+@media screen and (max-height:400px) {
+  img.quiz-logo{
+    top: 2vh !important;
+  }
+  .category-hover h3{
+    top: -13px !important;
+    font-size: 95%;
+  }
+  .category-hover h4{
+    position: relative;
+    top: -28px !important;
+  }
+  .category-hover p{
+    position: relative;
+    top: -43px !important;
+  }
+  .category-container div{
+    height: 60vh !important;
+  }
+}
+

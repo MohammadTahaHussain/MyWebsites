@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup For Quizzy Vibe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">
+      <span class="q">Q</span><span class="txtUI">UI</span
+      ><span class="z">Z</span>
+    </h1>
+    <div class="index-container">
+      <div class="login-details">
+        <h1>SignUp</h1>
+        <div>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            id="emailSignup"
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            placeholder="Create a Password"
+            id="passwordSignup"
+          />
+        </div>
+        <button id="signup-btn" class="custom-btn btn-11 hvr-wobble-top">
+          Signup
+          <div class="dot"></div>
+        </button>
+        <p class="goToLogin hvr-wobble-top" onclick="goToLogin()">
+          Already have an account? Login...
+        </p>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+    <script type="module" src="firebaseconfig.js"></script>  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+  <!-- need hai iski. ok -->
+</html>
