@@ -214,3 +214,15 @@ if(recoveryBtn){
   })
   recoveryEmail.value = ""
 }
+
+
+// For Console User
+
+onAuthStateChanged(auth, user =>{
+  if(user){
+    console.log(user)
+  }
+  else{
+    console.log("Not found")
+  }
+})
